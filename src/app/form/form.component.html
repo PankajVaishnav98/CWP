@@ -1,0 +1,78 @@
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+
+    <div class="col-sm-6">
+        <div class="form__group">
+
+            <input type="text" class="form__field" name="user" placeholder="Your Email" ngModel>
+            <span class="textbox-icon"><i class="far fa-user"></i></span>
+            <label for="email" class="form__label">Name*</label>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form__group">
+
+            <input type="text" class="form__field" name="email" placeholder="Your Email" ngModel>
+            <span class="textbox-icon"><i class="far fa-envelope"></i></span>
+            <label for="email" class="form__label">Email Address*</label>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form__group">
+
+            <input type="text" class="form__field" name="phone" placeholder="Your Email" ngModel>
+            <span class="textbox-icon"><i class="fas fa-phone-alt"></i></span>
+            <label for="email" class="form__label">Phone Number*</label>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form__group">
+
+            <input type="text" class="form__field form-control" name="whatsapp" placeholder="Your Email" ngModel>
+            <span class="textbox-icon"><i class="fab fa-whatsapp"></i></span>
+            <label for="email" class="form__label">Our Whatapp No</label>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="form__group">
+
+            <select name="course" id="1" ngModel 
+class="form__field form-control" #s required>
+<option  selected value="web designer">web designing</option>
+<option value="web devoleper">web devolepment</option>
+<option value="grapics designer">grapics designing</option>
+<option value="Ui/Ux designer">Ui/Ux designing</option>
+</select>
+<label for="email" class="form__label">Select Course</label>
+
+            <span class="textbox-icon"><i class="fas fa-dollar-sign"></i></span>
+
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form__group">
+
+            <input type="date" name="joiningdate" id="lastdate" class="form-control form__field" ngModel>
+            <span class="textbox-icon"><i class="far fa-clock"></i></span>
+            <label for="email" class="form__label">Joining Class Date</label>
+        </div>
+    </div>
+
+
+    <div class="col-sm-12">
+        <div class="form__group">
+
+            <textarea class="from-control form__field" name="message" placeholder="Your Email" ngModel></textarea>
+            <span class="textbox-icon"><i class="far fa-comment-dots"></i></span>
+            <label for="email" class="form__label">Massage*</label>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form__group">
+            <button type= "submit "class="send-inquiry">Send Your Inquiry</button>
+        </div>
+    </div>
+</form>

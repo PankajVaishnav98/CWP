@@ -1,0 +1,13 @@
+<ul class="list-group" *ngFor = "let place of placement ">
+    <li class="list-group-item">{{place.id}}</li>
+    <li class="list-group-item">{{place.company_name}}</li>
+    <li class="list-group-item">{{place.company_desc}}</li>
+    <!-- <li class="list-group-item">{{place.company_logo}}</li> -->
+    <li class="list-group-item">{{place.profession}}</li>
+    <li class="list-group-item">{{place.job_titles}}</li>
+    <li class="list-group-item">{{place.employee}}</li>
+    <li class="list-group-item">{{place.last_date}}</li>
+    <li  class="list-group-item">
+        <button type="button" class="btn btn-success" (click) = "onDelete(place)">delete</button>
+    </li>
+</ul>
